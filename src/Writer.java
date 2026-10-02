@@ -8,9 +8,20 @@
 * Licenc: MIT
 */
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Writer implements Writeable {
     @Override
     public void writeContent(String content) {
-        System.out.println("Fájlba írom a szöveget:  " + content);
+        try {
+            FileWriter writeContent = new FileWriter("write.txt");
+            writeContent.write("Az osztály, fájlba írja eme szöveget.");
+            writeContent.close();
+            System.out.println("Sikeresen fájlba írtam a megadott szöveget.");
+
+        } catch (IOException e) {
+            System.out.println("Hiba lépett fel a fájlba írás során: " + e.getMessage());
+        }
     }
 }
