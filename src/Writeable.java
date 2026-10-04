@@ -4,7 +4,7 @@
 * Copyright: 2026, Szász Benedek
 * Group: Szoft II N
 * Date: 2026-10-02
-* Github: https://github.com/benedekszasz7/
+* Github: https://github.com/BenedekSzasz/
 * Licenc: MIT
 */
 
